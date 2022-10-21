@@ -105,5 +105,22 @@ namespace QuickShort
             //short the list on the right of the pivot using quick short
             q_short(j + 1, high);
         }
+        void display()
+        {
+            Console.WriteLine("\n---------------------");
+            Console.WriteLine(" Sorted array elements ");
+            Console.WriteLine("-----------------------");
+
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("\nNumber of comparasion: " + cmp_count);
+            Console.WriteLine("\nNumber of data movements: " + mov_count);
+        }
+        int getSize()
+        {
+            return (n);
+        }
     }
 }
