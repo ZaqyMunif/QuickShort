@@ -122,5 +122,20 @@ namespace QuickShort
         {
             return (n);
         }
+        static void Main(string[] args)
+        {
+            //Declaring the object of the class
+            Program myList = new Program();
+            //Accept array elements
+            myList.input();
+            //Calling the shorting function
+            //First call to Quick short Alogorithm
+            myList.q_short(0, myList.getSize() - 1);
+            //Display shorted array
+            myList.display();
+            // to exit from the console
+            Console.WriteLine("\n\nPress Enter to exit. ");
+            Console.Read();
+        }
     }
 }
